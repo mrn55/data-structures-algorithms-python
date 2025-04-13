@@ -1,8 +1,11 @@
 def linear_search(list, target):
-    """returns index of postion"""
+    """returns index of postion, prints number of iterations for each search"""
+    iteration = 1
     for i in range(len(list)):
+        print('iteration:', iteration)
         if list[i] == target:
             return i
+        iteration += 1
     return None
 
 def verify(index):
