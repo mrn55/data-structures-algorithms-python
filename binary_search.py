@@ -34,3 +34,11 @@ verify(result)
 int_array = list(range(1000000))
 result = binary_search(int_array, 9999)
 verify(result)
+
+def treeSum(root):
+    if root is None:
+        return 0
+    else:
+        leftSum = treeSum(root.left)
+        rightSum = treeSum(root.right)
+        return root.data + leftSum + rightSum
