@@ -31,10 +31,15 @@ verify(result)
 result = binary_search(numbers, 6)
 verify(result)
 
-int_array = list(range(1000000))
-result = binary_search(int_array, 9999)
+big_int = 100000000
+print(f"creating large int array: {big_int}")
+int_array = list(range(100000000))
+print(f"created large int array: {big_int}")
+result = binary_search(int_array, 99999999)
 verify(result)
 
+
+#https://www.youtube.com/watch?v=s2Yyk3qdy3o
 def treeSum(root):
     if root is None:
         return 0

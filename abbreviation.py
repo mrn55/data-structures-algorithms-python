@@ -1,3 +1,4 @@
+# https://www.youtube.com/watch?v=ViILdd8495M
 def abbreviation(a, b):
     """Determine if string `a` can be converted to string `b` by deleting lowercase letters and capitalizing some letters. 
     Uses a 2D DP table of size (n+1) x (m+1) to track valid transformations."""
